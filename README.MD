@@ -1,18 +1,19 @@
 # Como rodar o desafio
 
 Clonar esse repositório e vá para o diretório. \
-` clone ...`
+` git clone git@github.com:ilitotor/desafio-nasa.git `
 
 Copie os datasets para mesma pasta do projeto:\
-https://ilito-semantix-test.s3-us-west-2.amazonaws.com/NASA_access_log_Aug95\
+https://ilito-semantix-test.s3-us-west-2.amazonaws.com/NASA_access_log_Aug95
+
 https://ilito-semantix-test.s3-us-west-2.amazonaws.com/NASA_access_log_Jul95
 
-**Opção 1**
+**Opção 1** \
 Caso já tenha o spark e a biblioteca pyspark instalada:
 Apenas execute o arquivo `app.py`.
 ex: `python app.py`
 
-**Opção 2**
+**Opção 2** \
 Caso não tenha, sugiro executar executar o teste dentro de um Docker container:
 1. build project container:
 `docker build -t pyspark --no-cache .`
@@ -58,10 +59,10 @@ O reduceByKey combina dados de cada partição de uma combinação de consultas,
 5 counts.saveAsTextFile("hdfs://...")
 ```
 
-`linha 1` O código lê um arquivo texto do tipo hdfs e salva em uma variável _textFile_
-`linha 2` Cria uma variável _count_ e quebra o arquivo em linhas 
-`linha 3` Cria um mapa(key, value) com as palavras
-`linha 4` Agrega as chaves atraves da operação de soma
+`linha 1` O código lê um arquivo texto do tipo hdfs e salva em uma variável _textFile_ \
+`linha 2` Cria uma variável _count_ e quebra o arquivo em linhas \
+`linha 3` Cria um mapa(key, value) com as palavras \
+`linha 4` Agrega as chaves atraves da operação de soma \
 `linha 5` Salva o resultado em outro arquivo texto do tipo hdfs
 
 
