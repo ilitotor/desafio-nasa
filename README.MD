@@ -10,11 +10,11 @@ https://ilito-semantix-test.s3-us-west-2.amazonaws.com/NASA_access_log_Jul95
 
 **Opção 1** \
 Caso já tenha o spark e a biblioteca pyspark instalada:
-Apenas execute o arquivo `app.py`.
+Apenas execute o arquivo `app.py`. \
 ex: `python app.py`
 
 **Opção 2** \
-Caso não tenha, sugiro executar executar o teste dentro de um Docker container:
+Caso não tenha, sugiro executar o código dentro de um Docker container:
 1. build project container: \
 `docker build -t pyspark --no-cache .`
 
