@@ -15,7 +15,7 @@ ex: `python app.py`
 
 **Opção 2** \
 Caso não tenha, sugiro executar executar o teste dentro de um Docker container:
-1. build project container:
+1. build project container: \
 `docker build -t pyspark --no-cache .`
 
 2. Run:\
