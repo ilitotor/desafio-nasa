@@ -27,7 +27,7 @@ opt-einsum==3.2.0
 packaging==20.3
 pandas==1.0.3
 patsy==0.5.1
-protobuf==3.11.3
+protobuf==3.18.3
 py4j==0.10.7
 pyparsing==2.4.7
 pyspark==2.4.5
